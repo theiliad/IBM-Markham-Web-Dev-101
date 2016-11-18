@@ -218,7 +218,7 @@ body {
 
 .reveal .roll span:after {
   color: #fff;
-  background: #1a53a1; }
+  background: #ff6d77; }
 
 /*********************************************
  * IMAGES
@@ -263,16 +263,16 @@ body {
   border-top-color: #ff4552; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #6ca0e8; }
+  border-right-color: #ff6d77; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #6ca0e8; }
+  border-left-color: #ff6d77; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #6ca0e8; }
+  border-bottom-color: #ff6d77; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #6ca0e8; }
+  border-top-color: #ff6d77; }
 
 /*********************************************
  * PROGRESS BAR
