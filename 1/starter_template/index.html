@@ -4,19 +4,86 @@
 
     <style>
         body {
-            font-family: 'Montserrat';
-            background: #333;
-            color: #fff;
-            text-align: center;
+            font-family: 'Lato';
+            background: #fff;
+            color: #333;
+            margin: 0;
         }
-
-        h1 {
-            
+        
+        header {
+            display: table;
+            text-align: left;
+            background: url(img/hero.jpg);
+            background-size: cover;
+            width: 100%;
+            padding: 30px;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        header h1 {
+            font-size: 70px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header p {
+            margin: 0;
+            padding: 0;
+            font-size: 19px
+        }
+        
+        section {
+            display: table;
+            padding: 30px;
+        }
+        
+        section h1 {
+            color: #f23e5a;
+        }
+        
+        section.projects ul li span.stars {
+            color: #f23e5a;
+        }
+        
+        ul {
+            padding: 0 15px;
+            list-style-type: decimal;
+        }
+        
+        ul li {
+            padding-left: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>John Smith</h1>
-    <p>UX/UI Designer</p>
+    <header>
+        <h1>John Smith</h1>
+        <p>UX/UI Designer</p>
+    </header>
+    
+    <section>
+        <div style="float: left; width: 75%;">
+            <h1>About Me</h1>
+            <p>I'm a design freak! Lorem ipsum dolor sit amet, erat quando deserunt his eu, ne usu iusto sanctus voluptaria, eu eam agam oporteat. Commune repudiare ne mel.<br /><br />Mundi tempor option cum ad, no assum indoctum nec, ut essent vocent mei. Has putent praesent vituperata ad, porro vituperata mel ea. Ea alii nusquam usu, sit ne option propriae definitiones.</p>
+        </div>
+        
+        <div style="float: left; width: 25%;">
+            <img style="width: 100%;" src="img/johnsmith.jpg" />
+        </div>
+    </section>
+    
+    <section class="projects">
+        <h1>My Skills</h1>
+        
+        <ul>
+            <li>Photoshop <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>
+            <li>Sketch <span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
+            <li>Illustrator <span class="stars">&#9733;&#9733;&#9733;</span></li>
+            <li>Invision <span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
+            <li>Axure <span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
+        </ul>
+    </section>
 </body>
 </html>
