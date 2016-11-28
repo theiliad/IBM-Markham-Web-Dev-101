@@ -1,125 +1,172 @@
 <html>
 <head>
-    <title>John Smith's Portfolio</title>
-
+    <title>Web Dev. 101</title>
+    
     <style>
         body {
             font-family: 'Lato';
-            background: #fff;
-            color: #333;
             margin: 0;
         }
         
         header {
-            display: table;
-            text-align: left;
             background: url(img/hero.jpg);
-            background-size: cover;
-            width: 100%;
-            padding: 30px;
             color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            padding: 30px 30px 30px 30px;
         }
         
-        header h1 {
+        h1 {
+            font-family: 'Montserrat';
             font-size: 70px;
             margin: 0;
             padding: 0;
         }
         
-        header p {
+        p {
             margin: 0;
             padding: 0;
-            font-size: 19px
         }
         
         section {
-            display: table;
             padding: 30px;
         }
         
-        section h1 {
-            color: #f23e5a;
+        section h3 {
+            color: #ff005b;
         }
         
-        section.projects ul li span.stars {
-            color: #f23e5a;
+        .marginTop {
+            margin-top: 30px;
         }
         
-        ul {
-            padding: 0 15px;
-            list-style-type: decimal;
+        .marginBottom {
+            margin-bottom: 30px;
         }
         
-        ul li {
-            padding-left: 10px;
+        a {
+            text-decoration: none;
+            outline: none;
         }
         
-        footer {
-            background: #f23e5a;
+        .btn {
+            display: table;
+            background: #ff005b;
+            padding: 15px;
             color: #fff;
-            text-align: center;
-            padding: 30px 0;
+            border-radius: 3px;
+            transition: all .2s ease;
+            box-shadow: 0 0 50px rgba(255, 0, 91, 0.3);
+        }
+        
+        .emailButton:hover .btn {
+            background: #ffd749;
+            color: #241c08;
+            transform: scale(2) rotate(360deg);
+            transition: all .2s ease;
+            box-shadow: none;
+        }
+        
+        div.center {
+            display: table;
+            margin: 0 auto;
+        }
+        
+        iframe.contact {
+            width: 100%;
+            min-height: 500px;
+        }
+        
+        table.skills {}
+        
+        table.skills tr th {
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+        
+        table.skills tr td:first-child {
+            padding-right: 45px;
+        }
+        
+        table.skills tr td:nth-child(2) {
+            color: #ff005b;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>John Smith</h1>
-        <p>UX/UI Designer</p>
+        <p>UI/UX Designer</p>
     </header>
+        
+    <section class="aboutMe" style="display: table; width: 100%;">
+        <div style="width: 75%; float: left; padding: 0;">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra arcu at dolor ullamcorper volutpat. Sed mollis nulla et nibh lacinia, non faucibus diam fringilla. Nam ullamcorper accumsan nunc et volutpat. Nulla facilisi.</p>
+        </div>
+        
+        <div style="width: 25%; float: left; padding: 0;">
+            <img src="img/johnsmith.jpg" style="width: 100%;" />
+        </div>
+    </section>
     
     <section>
-        <div style="float: left; width: 75%;">
-            <h1>About Me</h1>
-            <p>I'm a design freak! Lorem ipsum dolor sit amet, erat quando deserunt his eu, ne usu iusto sanctus voluptaria, eu eam agam oporteat. Commune repudiare ne mel.<br /><br />Mundi tempor option cum ad, no assum indoctum nec, ut essent vocent mei. Has putent praesent vituperata ad, porro vituperata mel ea. Ea alii nusquam usu, sit ne option propriae definitiones.</p>
-        </div>
+        <h3>My Skills</h3>
         
-        <div style="float: left; width: 25%;">
-            <img style="width: 100%;" src="img/johnsmith.jpg" />
-        </div>
-    </section>
-    
-    <section class="projects">
-        <h1>My Skills</h1>
-        
-        <div style="display: table;">
-            <ul style="float: left; line-height: 25px;">
+        <section style="display: table; padding: 0;">
+            <ol style="float: left; padding-left: 15px;">
                 <li>Photoshop</li>
-                <li>Sketch</li>
                 <li>Illustrator</li>
+                <li>Sketch</li>
                 <li>Invision</li>
                 <li>Axure</li>
-            </ul>
-
-            <ul style="float: left; list-style-type: none; line-height: 25.5px;">
-                <li><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></li>
-                <li><span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
-                <li><span class="stars">&#9733;&#9733;&#9733;</span></li>
-                <li><span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
-                <li><span class="stars">&#9733;&#9733;&#9733;&#9733;</span></li>
-            </ul>
-        </div>
-    </section>
-    
-    <section class="projects">
-        <h1>My Projects</h1>
+            </ol>
         
-        <ul style="line-height: 25px;">
-            <li>Blah Blah Blah</li>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Erat Quando Deserunt</li>
-            <li>Ne usu iusto</li>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Erat Quando Deserunt</li>
-            <li>Ne usu iusto</li>
-        </ul>
+            <ol style="list-style-type: none; float: left;">
+                <li>(5/5)</li>
+                <li>(4/5)</li>
+                <li>(5/5)</li>
+                <li>(3/5)</li>
+                <li>(2/5)</li>
+            </ol>
+        </section>
     </section>
     
-    <footer>
+    <section>
+        <table class="skills">
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            
+            <tr>
+                <td>Photoshop</td>
+                <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            
+            <tr>
+                <td>Illustrator</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            
+            <tr>
+                <td>Sketch</td>
+                <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h3>Get in Touch</h3>
+        
+        <section style="display: table; padding: 0; width: 100%;">
+            <div class="emailButton marginTop marginBottom center">
+                <a href="mailto:moosave@mcmaster.ca" class="btn">Send Me an Email</a>
+            </div>
+        </section>        
+    </section>
+    
+    <iframe src="https://freetemplate.typeform.com/to/GiClwL" frameborder="0" class="contact"></iframe>
+    
+    <footer style="background: #ff005b; color: #fff; padding: 30px 0; text-align: center;">
         Designed and Developed by John Smith
     </footer>
 </body>
