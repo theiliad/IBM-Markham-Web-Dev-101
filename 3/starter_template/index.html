@@ -1,0 +1,319 @@
+<html>
+<head>
+    <title>Web Dev. 101</title>
+    
+    <style>
+        body {
+            font-family: 'Lato';
+            margin: 0;
+        }
+        
+        header {
+            background: url(img/hero.jpg);
+            color: #fff;
+            padding: 30px 30px 30px 30px;
+        }
+        
+        h1 {
+            font-family: 'Montserrat';
+            font-size: 70px;
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            padding: 30px;
+        }
+        
+        section section {
+            padding: 0;
+        }
+        
+        section h3 {
+            color: #ff005b;
+        }
+        
+        .marginTop {
+            margin-top: 30px;
+        }
+        
+        .marginBottom {
+            margin-bottom: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        .btn {
+            display: table;
+            border: 2px solid #ff005b;
+            padding: 15px;
+            color: #ff005b;
+            border-radius: 3px;
+            transition: all .2s ease;
+        }
+        
+        .emailButton:hover .btn {
+            background: #ffd749;
+            color: #241c08;
+            border-color: #ffd749;
+            transform: scale(1.5);
+            transition: all .2s ease;
+            box-shadow: none;
+        }
+        
+        div.center {
+            display: table;
+            margin: 0 auto;
+        }
+        
+        iframe.contact {
+            width: 100%;
+            min-height: 500px;
+        }
+        
+        table.skills {}
+        
+        table.skills tr th {
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+        
+        table.skills tr td:first-child {
+            padding-right: 45px;
+        }
+        
+        table.skills tr td:nth-child(2) {
+            color: #ff005b;
+        }
+        
+        /* GRIDS */
+        .row {
+            width: 100%;
+            display: table;
+            margin: 30px 0;
+        }
+        
+        .column-2, .column-3, .column-4, .column-6 {
+            box-sizing: border-box;
+            float: left;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 30px;
+        }
+        
+        .column-2 {
+            width: 16.6666667%;
+        }
+        
+        .column-3 {
+            width: 25%;
+        }
+        
+        .column-4 {
+            width: 33.333333%;
+        }
+        
+        .column-6 {
+            width: 50%;
+        }
+        
+        /* extra-small */
+        @media (max-width: 767px) {
+            .column-2, .column-3, .column-4, .column-6 {
+                width: 100%;
+            }
+            
+            .column-xs-6 {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            
+        }
+
+        /* small */
+        @media (min-width: 768px) and (max-width: 991px) {
+            
+        }
+
+        /* med */
+        @media (min-width: 992px) and (max-width: 1199px) {
+            
+        }
+
+        /* large */
+        @media (min-width: 1200px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Smith</h1>
+        <p>UI/UX Designer</p>
+    </header>
+        
+    <section class="aboutMe" style="display: table; width: 100%;">
+        <div style="width: 75%; float: left; padding: 0;">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra arcu at dolor ullamcorper volutpat. Sed mollis nulla et nibh lacinia, non faucibus diam fringilla. Nam ullamcorper accumsan nunc et volutpat. Nulla facilisi.</p>
+        </div>
+        
+        <div style="width: 25%; float: left; padding: 0;">
+            <img src="img/johnsmith.jpg" style="width: 100%;" />
+        </div>
+    </section>
+    
+    <section>
+        <h3>My Skills</h3>
+        
+        <section style="display: table; padding: 0;">
+            <ol style="float: left; padding-left: 15px;">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Sketch</li>
+                <li>Invision</li>
+                <li>Axure</li>
+            </ol>
+        
+            <ol style="list-style-type: none; float: left;">
+                <li>(5/5)</li>
+                <li>(4/5)</li>
+                <li>(5/5)</li>
+                <li>(3/5)</li>
+                <li>(2/5)</li>
+            </ol>
+        </section>
+    </section>
+    
+    <section>
+        <table class="skills">
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            
+            <tr>
+                <td>Photoshop</td>
+                <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            
+            <tr>
+                <td>Illustrator</td>
+                <td>&#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+            
+            <tr>
+                <td>Sketch</td>
+                <td>&#9733; &#9733; &#9733; &#9733; &#9733;</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h3>Get in Touch</h3>
+        
+        <section style="display: table; padding: 0; width: 100%;">
+            <div class="emailButton marginTop marginBottom center">
+                <a href="mailto:moosave@mcmaster.ca" class="btn">Send Me an Email</a>
+            </div>
+        </section>
+    </section>
+    
+    <section>
+        <h3>Grids</h3>
+        
+        <div class="row">
+            <div class="column-6">
+                1/2
+            </div>
+            
+            <div class="column-6">
+                1/2
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column-6 column-xs-6">
+                1/2
+            </div>
+            
+            <div class="column-6 column-xs-6">
+                1/2
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column-4">
+                1/3
+            </div>
+            
+            <div class="column-4">
+                1/3
+            </div>
+            
+            <div class="column-4">
+                1/3
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column-3">
+                1/4
+            </div>
+            
+            <div class="column-3">
+                1/4
+            </div>
+            
+            <div class="column-3">
+                1/4
+            </div>
+            
+            <div class="column-3">
+                1/4
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="column-2">
+                1/6
+            </div>
+            
+            <div class="column-2">
+                1/6
+            </div>
+            
+            <div class="column-2">
+                1/6
+            </div>
+            
+            <div class="column-2">
+                1/6
+            </div>
+            
+            <div class="column-2">
+                1/6
+            </div>
+            
+            <div class="column-2">
+                1/6
+            </div>
+        </div>
+    </section>
+    
+    <iframe src="https://freetemplate.typeform.com/to/GiClwL" frameborder="0" class="contact"></iframe>
+    
+    <footer style="background: #ff005b; color: #fff; padding: 30px 0; text-align: center;">
+        Designed and Developed by John Smith
+    </footer>
+</body>
+</html>
