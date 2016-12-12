@@ -235,34 +235,38 @@ a = 2;
 b = a + 1;
 					</code></pre>
 				</section>
-               
+                
                 <section data-transition="slide" data-background-transition="zoom">
-					<h2>Operators - Continued</h2>
+					<h2>Values/Types</h2>
                     
-                    <p>Here are some of the most common operators in JavaScript:</p>
+                    <p>These different representations for values are called <em>types</em> in programming terminology. JavaScript has built-in types for each of these so called <em>primitive</em> values:</p>
 
                     <ul>
-                    <li>Assignment: <code>=</code> as in <code>a = 2</code>.</li>
-                    <li>Math: <code>+</code> (addition), <code>-</code> (subtraction), <code>*</code> (multiplication), and <code>/</code> (division), as in <code>a * 3</code>.</li>
-                    <li>Compound Assignment: <code>+=</code>, <code>-=</code>, <code>*=</code>, and <code>/=</code> are compound operators that combine a math operation with assignment, as in <code>a += 2</code> (same as <code>a = a + 2</code>).</li>
-                    <li>Increment/Decrement: <code>++</code> (increment), <code>--</code> (decrement), as in <code>a++</code> (similar to <code>a = a + 1</code>).</li>
-                    <li><p>Object Property Access: <code>.</code> as in <code>console.log()</code>.</p>
-
-                    <p>Objects are values that hold other values at specific named locations called properties. <code>obj.a</code> means an object value called <code>obj</code> with a property of the name <code>a</code>. Properties can alternatively be accessed as <code>obj["a"]</code>. See Chapter 2.</p></li>
-                    <li><p>Equality: <code>==</code> (loose-equals), <code>===</code> (strict-equals), <code>!=</code> (loose not-equals), <code>!==</code> (strict not-equals), as in <code>a == b</code>.</p>
-
-                    <p>See "Values &amp; Types" and Chapter 2.</p></li>
-                    <li><p>Comparison: <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code> (less than or loose-equals), <code>&gt;=</code> (greater than or loose-equals), as in <code>a &lt;= b</code>.</p>
-
-                    <p>See "Values &amp; Types" and Chapter 2.</p></li>
-                    <li><p>Logical: <code>&amp;&amp;</code> (and), <code>||</code> (or), as in <code>a || b</code> that selects either <code>a</code> <em>or</em> <code>b</code>.</p>
-
-                    <p>These operators are used to express compound conditionals (see "Conditionals"), like if either <code>a</code> <em>or</em> <code>b</code> is true.</p></li>
+                        <li>When you need to do math, you want a <code>number</code>.</li>
+                        <li>When you need to print a value on the screen, you need a <code>string</code> (one or more characters, words, sentences).</li>
+                        <li>When you need to make a decision in your program, you need a <code>boolean</code> (<code>true</code> or <code>false</code>).</li>
                     </ul>
+				</section>
+               
+               <section data-transition="slide" data-background-transition="zoom">
+					<h2>Values/Types Continued</h2>
+                    
+                    <p>Values that are included directly in the source code are called <em>literals</em>. <code>string</code> literals are surrounded by double quotes <code>"..."</code> or single quotes (<code>'...'</code>) -- the only difference is stylistic preference. <code>number</code> and <code>boolean</code> literals are just presented as is (i.e., <code>42</code>, <code>true</code>, etc.).</p>
+                    
+					<pre><code class="hljs" data-trim>
+"I am a string";
+'I am also a string';
+
+42;
+
+true;
+false;
+					</code></pre>
 				</section>
                 
                 <section data-transition="fade">
-					<h1>Let's Code!</h1>
+					<h1>The End</h1>
+					<p>All references, tutorials taken from the book<br /><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank">You Don't know JS</a></p>
 				</section>
 			</div>
 
